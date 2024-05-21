@@ -1,4 +1,4 @@
-/* Resetting default margin and padding */
+/* Your CSS styles go here */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +7,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  height: 100vh;
-  margin: 0;
   background-color: #f0f0f0;
 }
 
@@ -16,6 +14,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  position: sticky;
+  width: 100%;
 }
 
 .container-navbar {
@@ -33,16 +33,17 @@ body {
 .title img {
   width: 25px;
   height: auto;
+  margin-right: 10px;
 }
 
 .title h1 {
-  margin-left: 10px;
   font-size: 20px;
 }
 
 .navbar {
-  display: flex;
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -57,18 +58,6 @@ body {
 
 .link > i {
   padding-right: 10px;
-}
-
-.btn {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  padding: 0.6rem;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .dropdown-container {
@@ -98,7 +87,6 @@ body {
 
 .dropdown a:hover {
   background-color: #f4f4f4;
-  color: black;
 }
 
 .show {
@@ -123,15 +111,15 @@ body {
   padding: 100px;
 }
 
-.text {
+.hero-content {
   color: #000;
+  margin-right: 80px;
 }
 
 .hero-text {
   font-size: 64px;
   max-width: 550px;
   padding-bottom: 25px;
-  margin-right: 80px;
 }
 
 .hero-text > span {
@@ -151,5 +139,96 @@ body {
 
 .hero-img img {
   max-width: 500px;
-  margin-left: 10px;
 }
+
+/* Menu */
+.container-menu {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.menu-title {
+  margin-bottom: 30px;
+}
+
+.menu-title h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-menu {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.menu-title {
+  margin-bottom: 30px;
+}
+
+.menu-title h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-menu {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.container-menu .container-menu {
+  max-width: 400px;
+}
+
+.container-menu h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.container-menu span {
+  color: #ffd700;
+}
+
+.container-menu p {
+  margin-top: 10px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.container-menu button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-menu button:hover {
+  background-color: #0056b3;
+}
+
+section.container-menu .container-menu {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  max-height: 400px;
+  padding: 20px 20px;
+}
+
+/* Our Packet */
