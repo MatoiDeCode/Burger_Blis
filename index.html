@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/Style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/css/Style.css" />
     <title>Burger Blis</title>
-</head>
-<body>
-
-    
-    
-</body>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header class="container">
+      <nav class="container-navbar">
+        <div class="title">
+          <img src="src/images/Logo.png" alt="Logo" />
+          <h1>Burger Blis</h1>
+        </div>
+        <ul class="navbar">
+          <li class="nav">
+            <a class="link" href="#"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav">
+            <a class="link" href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+          </li>
+          <li class="nav">
+            <a class="link" href="#"
+              ><i class="fa-solid fa-truck"></i>Box Catering</a
+            >
+          </li>
+        </ul>
+        <div class="dropdown-container">
+          <button class="btn" id="btn">
+            MORE MENU <i class="fa-solid fa-arrow-down link" id="arrow"></i>
+          </button>
+          <div class="dropdown" id="dropdown">
+            <a href="#create" class="link"
+              ><i class="fa-solid fa-utensils"></i>Catering Service</a
+            >
+            <a href="#draft" class="link"><i class="fa-solid fa-truck"></i>Delivery Order</a>
+            <a href="#move" class="link"><i class="fa-solid fa-handshake"></i>Cooperation</a>
+            <a href="#profile" class="link"
+              ><i class="fa-solid fa-map-marker-alt"></i>Google Maps</a
+            >
+            <a href="#notification" class="link"
+              ><i class="fa-solid fa-phone"></i>WhatsApp</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+    <script src="src/js/Script.js"></script>
+  </body>
 </html>
