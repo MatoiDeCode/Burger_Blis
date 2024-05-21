@@ -1,3 +1,4 @@
+/* Resetting default margin and padding */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
 .container {
@@ -19,6 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .title {
@@ -109,4 +113,43 @@ body {
 
 .arrow.rotate {
   transform: rotate(180deg);
+}
+
+/* Hero */
+.container-hero {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  padding: 100px;
+}
+
+.text {
+  color: #000;
+}
+
+.hero-text {
+  font-size: 64px;
+  max-width: 550px;
+  padding-bottom: 25px;
+  margin-right: 80px;
+}
+
+.hero-text > span {
+  color: #ebb700;
+}
+
+.hero-text-desc {
+  font-size: 16px;
+  max-width: 350px;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-img img {
+  max-width: 500px;
+  margin-left: 10px;
 }
