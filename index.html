@@ -10,10 +10,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/css/Style.css" />
     <title>Burger Bliss</title>
   </head>
-  <body>
+  <body style="display: flex; flex-direction: column; justify-content: center;">
     <header class="container">
       <nav class="container-navbar">
         <div class="title">
@@ -32,28 +38,28 @@
             >
           </li>
           <li class="nav">
-            <a class="link" href="#"
+            <a class="link" href="#ourPaket"
               ><i class="fa-solid fa-truck"></i>Box Catering</a
             >
           </li>
           <li class="nav dropdown-container">
-            <button class="btn" id="btn">
+            <button class="btn" id="btn" style="padding: 10px; border-radius: 10px;">
               MORE MENU <i class="fa-solid fa-arrow-down link" id="arrow"></i>
             </button>
-            <div class="dropdown" id="dropdown">
-              <a href="#create" class="link"
+            <div class="dropdown" id="dropdown" style="width: 210px;">
+              <a href="#catering" class="link"
                 ><i class="fa-solid fa-utensils"></i>Catering Service</a
               >
-              <a href="#draft" class="link"
+              <a href="#delivery" class="link"
                 ><i class="fa-solid fa-truck"></i>Delivery Order</a
               >
-              <a href="#move" class="link"
+              <a href="#cooperation" class="link"
                 ><i class="fa-solid fa-handshake"></i>Cooperation</a
               >
-              <a href="#profile" class="link"
+              <a href="#google" class="link"
                 ><i class="fa-solid fa-map-marker-alt"></i>Google Maps</a
               >
-              <a href="#notification" class="link"
+              <a href="https://wa.me/085894296428" target="_blank" class="link"
                 ><i class="fa-brands fa-whatsapp"></i>WhatsApp</a
               >
             </div>
@@ -79,12 +85,14 @@
 
     <section class="container-menu" id="menu">
       <div class="menu-title">
-        <h2>Our Menu</h2>
+        <h2 style="font-size: 2rem; color: #333; text-transform: uppercase">
+          Our Menu
+        </h2>
       </div>
       <div class="menu-items">
         <div class="container-menu">
           <img src="src/images/Burger.png" alt="" />
-          <h3>BURGER 1</h3>
+          <h3>BURGER</h3>
           <span>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
@@ -98,38 +106,39 @@
         </div>
 
         <div class="container-menu">
-          <img src="src/images/Burger.png" alt="" />
-          <h3>BURGER 2</h3>
+          <img src="src/images/Pizza.png" alt="" />
+          <h3>PIZZA</h3>
           <span>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
           </span>
           <p>
-            Grilled minced meat in a bun, topped with various ingredients and
-            sauces-. Popular fast food customizable to individual preferences.
+            Italian dish with a flat crust, tomato sauce, cheese, and assorted
+            toppings. Baked for a delicious, globally cherished treat.
           </p>
-          <button>RP 47.000</button>
+          <button>RP 60.000</button>
         </div>
 
         <div class="container-menu">
-          <img src="src/images/Burger.png" alt="" />
-          <h3>BURGER 3</h3>
+          <img src="src/images/Teh Sosro.png" alt="" />
+          <h3>TEH SOSRO</h3>
           <span>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
           </span>
           <p>
-            Grilled minced meat in a bun, topped with various ingredients and
-            sauces-. Popular fast food customizable to individual preferences.
+            Popular Indonesian tea brand with a refreshing taste, offering
+            bottled jasmine tea and flavored teas. Widely enjoyed for its
+            natural and aromatic blend.
           </p>
-          <button>RP 47.000</button>
+          <button>RP 05.000</button>
         </div>
 
         <div class="container-menu">
-          <img src="src/images/Burger.png" alt="" />
-          <h3>BURGER 2</h3>
+          <img src="src/images/Pepsi.png" alt="" />
+          <h3>PEPSI</h3>
           <span>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
@@ -137,44 +146,1238 @@
           </span>
           <p>
             Grilled minced meat in a bun, topped with various ingredients and
-            sauces-. Popular fast food customizable to individual preferences.
+            sauces. Popular fast food customizable to individual preferences.
           </p>
-          <button>RP 47.000</button>
+          <button>RP 05.000</button>
         </div>
 
         <div class="container-menu">
-          <img src="src/images/Burger.png" alt="" />
-          <h3>BURGER 2</h3>
+          <img src="src/images/Fried Chicken.png" alt="" />
+          <h3>FRIED CHICKEN</h3>
           <span>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
           </span>
           <p>
-            Grilled minced meat in a bun, topped with various ingredients and
-            sauces-. Popular fast food customizable to individual preferences.
+            Fried chicken is a crispy dish made by deep-frying seasoned chicken
+            pieces. Known for its golden-brown exterior and juicy meat, it's a
+            popular comfort food.
           </p>
-          <button>RP 47.000</button>
+          <button>RP 17.000</button>
         </div>
 
         <div class="container-menu">
-          <img src="src/images/Burger.png" alt="" />
-          <h3>BURGER 2</h3>
+          <img src="src/images/Coffe.png" alt="" />
+          <h3>COFFE FLOAT</h3>
           <span>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
             ><i class="fa-solid fa-star"></i>
           </span>
           <p>
-            Grilled minced meat in a bun, topped with various ingredients and
-            sauces-. Popular fast food customizable to individual preferences.
+            Brewed coffee poured over vanilla ice cream, creating a delightful
+            blend of hot and cold, bitter and sweet. A favorite treat for coffee
+            and ice cream lovers.
           </p>
-          <button>RP 47.000</button>
+          <button>RP 23.000</button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      "
+    >
+      <h1 style="font-size: 2rem; color: #333; text-transform: uppercase">
+        Our Paket
+      </h1>
+      <div class="swiffy-slider">
+        <ul class="slider-container">
+          <li>
+            <div
+              class="container-menu"
+              style="display: flex; justify-content: center; gap: 70px"
+            >
+              <div class="">
+                <img
+                  src="src/images/EasyPackageP.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                  <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="container-menu"
+              style="display: flex; justify-content: center; gap: 70px"
+            >
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="container-menu"
+              style="display: flex; justify-content: center; gap: 70px"
+            >
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+              <div class="">
+                <img
+                  src="src/images/Burger.png"
+                  alt=""
+                  style="margin-bottom: 10px"
+                />
+                <h3>HARD PACKAGES</h3>
+                <span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </span>
+                <p style="max-width: 200px; text-align: center">
+                  BURGER CHICKEN COFFE NOODLE
+                </p>
+                <button>RP 47.000</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+
+        <div class="slider-indicators">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="" id="delivery">
+      <h1
+        style="
+          text-align: center;
+          font-size: 2rem;
+          color: #333;
+          text-transform: uppercase;
+        "
+      >
+        Delivery order
+      </h1>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          gap: 50px;
+        "
+      >
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+        >
+          <h1 style="font-weight: bold; font-size: 24px; margin-bottom: 10px">
+            PERSONAL IDENTITY
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <form
+              action=""
+              method="post"
+              style="
+                display: flex;
+                flex-flow: column;
+                width: 260px;
+                margin-top: 10px;
+              "
+            >
+              <label for="nama">NAMA : </label>
+              <input type="text" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">ALAMAT : </label>
+              <input type="text" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">EMAIL : </label>
+              <input type="email" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">NO HP : </label>
+              <input type="number" name="nama" id="" />
+              <img style="width: 334px" src="src/images/Info.png" alt="Info" />
+            </form>
+          </div>
+        </div>
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+          class="hello"
+        >
+          <div class="" style="margin-bottom: 30px">
+            <input
+              type="text"
+              style="
+                width: 250px;
+                height: 45px;
+                margin-right: 20px;
+                border-radius: 20px;
+              "
+            />
+            <button style="width: 45px; height: 45px; border-radius: 15px">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div
+            class=""
+            style="
+              display: grid;
+              justify-content: space-around;
+              align-items: center;
+              margin-bottom: 50px;
+            "
+          >
+            <div class="" style="display: flex; gap: 50px; align-items: center">
+              <img src="src/images/Pepsi.png" alt="" width="100px" />
+              <div class="" style="display: grid">
+                <span>BURGER</span>
+                <span>RP 47.000</span>
+              </div>
+              <butto
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #000;
+                  border-radius: 15px;
+                "
+                
+              ></butto>
+            </div>
+          </div>
+          <div
+            class=""
+            style="
+              display: grid;
+              justify-content: space-around;
+              align-items: center;
+              margin-bottom: 50px;
+            "
+          >
+            <div class="" style="display: flex; gap: 50px; align-items: center">
+              <img src="src/images/Pepsi.png" alt="" width="100px" />
+              <div class="" style="display: grid">
+                <span>BURGER</span>
+                <span>RP 47.000</span>
+              </div>
+              <button
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #000;
+                  border-radius: 15px;
+                "
+              ></button>
+            </div>
+          </div>
+          <div
+            class=""
+            style="
+              display: grid;
+              justify-content: space-around;
+              align-items: center;
+              margin-bottom: 50px;
+            "
+          >
+            <div class="" style="display: flex; gap: 50px; align-items: center">
+              <img src="src/images/Pepsi.png" alt="" width="100px" />
+              <div class="" style="display: grid">
+                <span>BURGER</span>
+                <span>RP 47.000</span>
+              </div>
+              <button
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #000;
+                  border-radius: 15px;
+                "
+              ></button>
+            </div>
+          </div>
+          <button style="width: 125px; height: 30px; border-radius: 10px">
+            ORDER
+          </button>
+        </div>
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+        >
+          <h1 style="font-weight: bold; font-size: 24px; margin-bottom: 30px">
+            NOTE
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <ul style="font-weight: bold; font-size: 12px; max-width: 250px">
+              <li type="1">Ordering Service Hours 10.00 to 16.00 WIB.</li>
+              <li type="1">Madiun City Delivery Area.</li>
+              <li type="1">Minimum Order 10 Boxes.</li>
+              <li type="1">Free Shipping.</li>
+            </ul>
+            <img
+              style="
+                width: 334px;
+                position: relative;
+                left: 30px;
+                margin-top: 100px;
+              "
+              src="src/images/Info.png"
+              alt="Info"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="" id="catering">
+      <h1
+        style="
+          text-align: center;
+          font-size: 2rem;
+          color: #333;
+          text-transform: uppercase;
+        "
+      >
+        Catering Service
+      </h1>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          gap: 50px;
+        "
+      >
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+        >
+          <h1 style="font-weight: bold; font-size: 24px; margin-bottom: 10px">
+            PERSONAL IDENTITY
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <form
+              action=""
+              method="post"
+              style="
+                display: flex;
+                flex-flow: column;
+                width: 260px;
+                margin-top: 10px;
+              "
+            >
+              <label for="nama">NAMA : </label>
+              <input type="text" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">ALAMAT : </label>
+              <input type="text" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">EMAIL : </label>
+              <input type="email" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">NO HP : </label>
+              <input type="number" name="nama" id="" />
+              <img style="width: 334px" src="src/images/Info.png" alt="Info" />
+            </form>
+          </div>
+        </div>
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+          class="hello"
+        >
+          <div class="" style="margin-bottom: 30px">
+            <input
+              type="text"
+              style="
+                width: 250px;
+                height: 45px;
+                margin-right: 20px;
+                border-radius: 20px;
+              "
+            />
+            <button style="width: 45px; height: 45px; border-radius: 15px">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div
+            class=""
+            style="
+              display: grid;
+              justify-content: space-around;
+              align-items: center;
+              margin-bottom: 50px;
+            "
+          >
+            <div class="" style="display: flex; gap: 30px; align-items: center">
+              <img src="src/images/Pepsi.png" alt="" width="100px" />
+              <div class="" style="display: grid">
+                <span>HARD PACKAGES</span>
+                <span>RP 47.000</span>
+              </div>
+              <button
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #000;
+                  border-radius: 15px;
+                "
+              ></button>
+            </div>
+          </div>
+          <div
+            class=""
+            style="
+              display: grid;
+              justify-content: space-around;
+              align-items: center;
+              margin-bottom: 50px;
+            "
+          >
+            <div class="" style="display: flex; gap: 30px; align-items: center">
+              <img src="src/images/Pepsi.png" alt="" width="100px" />
+              <div class="" style="display: grid">
+                <span>HARD PACKAGES</span>
+                <span>RP 47.000</span>
+              </div>
+              <button
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #000;
+                  border-radius: 15px;
+                "
+              ></button>
+            </div>
+          </div>
+          <div
+            class=""
+            style="
+              display: grid;
+              justify-content: space-around;
+              align-items: center;
+              margin-bottom: 50px;
+            "
+          >
+            <div class="" style="display: flex; gap: 30px; align-items: center">
+              <img src="src/images/Pepsi.png" alt="" width="100px" />
+              <div class="" style="display: grid">
+                <span>HARD PACKAGES</span>
+                <span>RP 47.000</span>
+              </div>
+              <button
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #000;
+                  border-radius: 15px;
+                "
+              ></button>
+            </div>
+          </div>
+          <button style="width: 125px; height: 30px; border-radius: 10px">
+            ORDER
+          </button>
+        </div>
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+        >
+          <h1 style="font-weight: bold; font-size: 24px; margin-bottom: 30px">
+            NOTE
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <ul style="font-weight: bold; font-size: 12px; max-width: 250px">
+              <li type="1">Ordering Service Hours 10.00 to 16.00 WIB.</li>
+              <li type="1">Madiun City Delivery Area.</li>
+              <li type="1">Minimum Order 10 Boxes.</li>
+              <li type="1">Free Shipping.</li>
+            </ul>
+            <img
+              style="
+                width: 334px;
+                position: relative;
+                left: 30px;
+                margin-top: 100px;
+              "
+              src="src/images/Info.png"
+              alt="Info"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="" id="cooperation">
+      <h1
+        style="
+          text-align: center;
+          font-size: 2rem;
+          color: #333;
+          text-transform: uppercase;
+        "
+      >
+        Cooperation
+      </h1>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          gap: 50px;
+        "
+      >
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+        >
+          <h1 style="font-weight: bold; font-size: 24px; margin-bottom: 10px">
+            PERSONAL IDENTITY
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <form
+              action=""
+              method="post"
+              style="
+                display: flex;
+                flex-flow: column;
+                width: 260px;
+                margin-top: 10px;
+              "
+            >
+              <label for="nama">NAMA : </label>
+              <input type="text" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">ALAMAT : </label>
+              <input type="text" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">EMAIL : </label>
+              <input type="email" name="nama" id="" />
+              <label for="nama" style="margin-top: 0.625rem">NO HP : </label>
+              <input type="number" name="nama" id="" />
+              <img style="width: 334px" src="src/images/Info.png" alt="Info" />
+            </form>
+          </div>
+        </div>
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+        >
+          <div class="" style="margin-bottom: 30px">
+            <div
+              class=""
+              style="
+                display: grid;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
+              <span>APPLYING FOR</span>
+              <span>COOPERATION IN TERMS</span>
+            </div>
+            <div
+              class=""
+              style="font-size: 12px; font-weight: bold; margin-top: 50px"
+            >
+              <div
+                class="hello"
+                style="
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  margin-bottom: 20px;
+                "
+              >
+                <button
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 15px;
+                    margin-right: 10px;
+                    border: 1px solid #000;
+                  "
+                ></button>
+                <span>BRANCH OPENING</span>
+              </div>
+              <div
+                class="hello"
+                style="
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  margin-bottom: 20px;
+                "
+              >
+                <button
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 15px;
+                    margin-right: 10px;
+                    border: 1px solid #000;
+                  "
+                ></button>
+                <span>BRANCH OPENING</span>
+              </div>
+              <div
+                class="hello"
+                style="
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  margin-bottom: 20px;
+                "
+              >
+                <button
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 15px;
+                    margin-right: 10px;
+                    border: 1px solid #000;
+                  "
+                ></button>
+                <span>BRANCH OPENING</span>
+              </div>
+            </div>
+          </div>
+          <button style="width: 130px; height: 30px; border-radius: 10px">
+            SUBMIT
+          </button>
+        </div>
+        <div
+          style="
+            width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+          "
+        >
+          <h1 style="font-weight: bold; font-size: 24px; margin-bottom: 30px">
+            NOTE
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <ul style="font-weight: bold; font-size: 12px; max-width: 250px">
+              <li type="1">Ordering Service Hours 10.00 to 16.00 WIB.</li>
+              <li type="1">Madiun City Delivery Area.</li>
+              <li type="1">Minimum Order 10 Boxes.</li>
+              <li type="1">Free Shipping.</li>
+            </ul>
+            <img
+              style="
+                width: 334px;
+                position: relative;
+                left: 30px;
+                margin-top: 100px;
+              "
+              src="src/images/Info.png"
+              alt="Info"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 30px;
+      "
+    >
+      <div style="display: gird" id="google">
+        <h1
+          style="
+            font-weight: bold;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+          "
+        >
+          OUR BRANCH LOCATIONS
+        </h1>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+          "
+        >
+          <div class="container-maps">
+            <div class="sidebar">
+              <h1 style="text-transform: uppercase; margin-bottom: 10px">
+                indonesia
+              </h1>
+              <div class="content">
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    overflow-y: auto;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-maps">
+            <div class="sidebar">
+              <h1 style="text-transform: uppercase; margin-bottom: 10px">
+                indonesia
+              </h1>
+              <div class="content">
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    overflow-y: auto;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+                <div
+                  class=""
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <input
+                    type="text"
+                    value="https://www.google.com/maps?q=40.712776,-74.005974"
+                    style="
+                      width: 400px;
+                      height: 40px;
+                      border-radius: 10px;
+                      padding: 5px;
+                    "
+                    readonly
+                  />
+                  <button
+                    class="sidebar-button"
+                    data-url="https://www.google.com/maps?q=40.712776,-74.005974"
+                  >
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <script src="src/js/Script.js"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </body>
 </html>
